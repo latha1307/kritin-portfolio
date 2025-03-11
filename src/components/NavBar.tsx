@@ -11,7 +11,7 @@ export const NavBar = () => {
       {/* Logo Section */}
       <div className="flex items-center gap-3">
         <img src={logo} alt="logo" className="h-12 w-12" />
-        <h2 className="text-xl font-bold text-[#f87456] tracking-widest">Kritin</h2>
+        <h2 className="text-[28px] font-bold text-[#f87456] tracking-widest">Kritin</h2>
       </div>
 
       {/* Desktop Menu */}
