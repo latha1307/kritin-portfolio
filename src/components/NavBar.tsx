@@ -7,7 +7,7 @@ export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-black text-white px-6 md:px-32 py-4 flex mt-2 justify-between items-center relative">
+    <nav className="bg-black text-white px-6 md:px-32 py-4 flex fixed w-full bg-opacity-95 top-0 z-10 justify-between items-center ">
       <div className="flex items-center gap-3">
         <img src={logo} alt="logo" className="h-12 w-12" />
         <h2 className="text-[28px] font-bold text-[#DB4A2B] tracking-widest">
