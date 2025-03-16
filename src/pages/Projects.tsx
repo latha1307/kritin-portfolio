@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Projects = () => {
   return (
-    <div className='text-gray-200 my-4 mx-8 md:mx-64 md:my-20'>
+    <div className='text-gray-200 my-4 mt-20 mx-8 md:mx-64 md:my-24'>
       <div className="space-y-10">
         <h1 className="md:text-[50px] text-[40px] font-bold text-[#DB4A2B]">Who am I?</h1>
         <h3 className="md:text-[50px] text-[40px] font-bold ">My name is <span className='text-[#DB4A2B]'>Kritin.</span> I’m a Product Designer.</h3>
