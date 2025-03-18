@@ -3,6 +3,7 @@ import Parent1 from '../assets/parent1.png'
 import Parent2 from '../assets/parent2.png' 
 import Parent3 from '../assets/parent3.png' 
 import Parent4 from '../assets/parent4.png' 
+import { Link } from 'react-router-dom'
 
 export const Projects = () => {
   return (
@@ -55,11 +56,13 @@ export const Projects = () => {
           the core user issues were effectively addressed.
         </p>
 
+        <Link to="/case-study">
         <div 
           className="px-6 py-4 sm:py-6 rounded-full text-[16px] sm:text-[18px] md:text-[20px] mt-16 text-center hover:bg-[#214ba6] shadow-[inset_2px_2px_6px_rgba(0,0,0,0.4)] bg-[#2137A6] text-white font-semibold hover:-translate-y-1 duration-300 cursor-pointer"
         >
           Read Full Case Study
         </div>
+        </Link>
       </div>
     </div>
   )

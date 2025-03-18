@@ -5,6 +5,7 @@ import { Projects } from './pages/Projects.tsx';
 import { DesignExpo } from './pages/DesignExpo.tsx';
 import { About } from './pages/About.tsx';
 import { Contact } from './pages/Contact.tsx';
+import NewParentCaseStudy from './pages/NewParentCaseStudy.tsx';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/design" element={<DesignExpo />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/case-study" element={<NewParentCaseStudy />} />
       </Routes>
     </Router>
   );
