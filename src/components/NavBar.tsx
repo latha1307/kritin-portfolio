@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/kritinLogo.png";
 
 export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,7 +20,6 @@ export const NavBar = () => {
   return (
     <nav className="bg-black text-white px-6 md:px-32 py-4 flex fixed w-full md:bg-opacity-70 md:bg-blend-multiply top-0 z-10 justify-between items-center md:backdrop-blur-lg">
       <div className="flex items-center gap-3">
-        <img src={logo} alt="logo" className="h-12 w-12" />
         <h2 className="text-[28px] font-bold text-[#DB4A2B] tracking-widest">
           Kritin
         </h2>
@@ -62,7 +60,6 @@ export const NavBar = () => {
   <div className="fixed inset-0 bg-black flex flex-col items-center z-50 p-6">
     <div className="flex items-center justify-between w-full">
       <div className="flex items-center gap-3">
-        <img src={logo} alt="logo" className="h-12 w-12" />
         <h2 className="text-[28px] font-bold text-[#DB4A2B] tracking-widest">
           Kritin
         </h2>

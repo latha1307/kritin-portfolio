@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 export const Contact = () => {
   const [copied, setCopied] = useState(false);
@@ -10,10 +11,13 @@ export const Contact = () => {
   };
 
   return (
-    <div className='text-gray-200 mt-32 my-10 mx-8 md:mx-64 md:my-44 space-y-14'>
+    <motion.div initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1, delay: 0.5 }}
+    viewport={{ once: false }} className='text-gray-200 mt-32 my-10 mx-8 md:mx-64 md:my-44 space-y-14'>
       <div className="md:text-[60px] text-[40px] font-bold text-[#DB4A2B]">CONTACT ME.</div>
       <div className="md:text-[26px] text-[20px] text-zinc-400">
-        I am available for internship and full-time opportunities. Message me on <span className="text-[#339ECC]">LinkedIn</span> 
+        I am available for internship and full-time opportunities. Message me on <span className="text-[#339ECC]"> LinkedIn </span> 
         or contact me at my email address, kritinrajmohan@gmail.com
       </div>
       
@@ -32,6 +36,6 @@ export const Contact = () => {
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
