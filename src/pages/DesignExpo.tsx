@@ -39,55 +39,7 @@ export const DesignExpo = () => {
               transition={{ duration: 1 }}
               className=" md:text-[58px] text-[38px] font-bold leading-tight">Browse through some of my design explorations</motion.h1>
       <div className="mt-28">
-        <motion.button 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
-        transition={{ duration: 1 }}
-        className="bg-zinc-900 px-4 py-3 border border-zinc-800 text-white rounded-2xl shadow-[inset_4px_4px_6px_rgba(255,255,255,0.1),inset_12px_12px_14px_rgba(0,0,0,0.6)] transition-all duration-300">Mobile app</motion.button>
-            <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    viewport={{ once: false }}
-                    className="bg-gradient-to-b from-slate-600 to-slate-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-6 py-8 rounded-3xl mt-10"
-                  >
-                    {[music1, music2, music3].map((image, index) => (
-                      <motion.img
-                        key={index}
-                        src={image}
-                        alt={`music-${index + 1}`}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
-                        viewport={{ once: false }}
-                        className="w-full rounded-lg"
-                      />
-                    ))}
-              </motion.div>
-
-
-      <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    viewport={{ once: false }}
-                    className="bg-gradient-to-b from-slate-600 to-slate-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-6 py-8 rounded-3xl mt-10"
-                  >
-                    {[music4, music5, music6].map((image, index) => (
-                      <motion.img
-                        key={index}
-                        src={image}
-                        alt={`music-${index + 1}`}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
-                        viewport={{ once: false }}
-                        className="w-full rounded-lg"
-                      />
-                    ))}
-              </motion.div>
-        <motion.button 
+      <motion.button 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: false }}
@@ -133,6 +85,135 @@ export const DesignExpo = () => {
                       />
                     ))}
               </motion.div>
+        <motion.button 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
+        transition={{ duration: 1 }}
+        className="bg-zinc-900 mt-10 px-4 py-3 border border-zinc-800 text-white rounded-2xl shadow-[inset_4px_4px_6px_rgba(255,255,255,0.1),inset_12px_12px_14px_rgba(0,0,0,0.6)] transition-all duration-300">Mobile app</motion.button>
+            <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: false }}
+                    className="bg-gradient-to-b from-slate-600 to-slate-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-6 py-8 rounded-3xl mt-10"
+                  >
+                    {[music1, music2, music3].map((image, index) => (
+                      <motion.img
+                        key={index}
+                        src={image}
+                        alt={`music-${index + 1}`}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
+                        viewport={{ once: false }}
+                        className="w-full rounded-lg"
+                      />
+                    ))}
+              </motion.div>
+
+
+      <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: false }}
+                    className="bg-gradient-to-b from-slate-600 to-slate-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-6 py-8 rounded-3xl mt-10"
+                  >
+                    {[music4, music5, music6].map((image, index) => (
+                      <motion.img
+                        key={index}
+                        src={image}
+                        alt={`music-${index + 1}`}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
+                        viewport={{ once: false }}
+                        className="w-full rounded-lg"
+                      />
+                    ))}
+              </motion.div>
+
+
+
+        <motion.button
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
+        transition={{ duration: 1 }}
+        className="bg-zinc-900 px-4 py-3 mt-20 border border-zinc-900 text-white rounded-2xl shadow-[inset_4px_4px_6px_rgba(255,255,255,0.1),inset_12px_12px_14px_rgba(0,0,0,0.6)] transition-all duration-300">Mobile app</motion.button>
+
+      <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: false }}
+                    className="bg-gradient-to-b from-slate-600 to-slate-800 grid grid-cols-2 md:grid-cols-4 gap-4 px-6 py-8 rounded-3xl mt-10"
+                  >
+                    {[pro3, pro4, pro6, pro5].map((image, index) => (
+                      <motion.img
+                        key={index}
+                        src={image}
+                        alt={`ecommerce-${index + 1}`}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
+                        viewport={{ once: false }}
+                        className="w-full rounded-lg"
+                      />
+                    ))}
+              </motion.div>
+
+      
+      <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: false }}
+                    className="bg-gradient-to-b from-slate-600 to-slate-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-6 py-8 rounded-3xl mt-10"
+                  >
+                    {[pro7, pro2, pro1].map((image, index) => (
+                      <motion.img
+                        key={index}
+                        src={image}
+                        alt={`project-${index + 1}`}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
+                        viewport={{ once: false }}
+                        className="w-full rounded-lg"
+                      />
+                    ))}
+              </motion.div>
+
+              <motion.button 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
+        transition={{ duration: 1 }}
+        className="bg-zinc-900 px-4 py-3 mt-20 border border-zinc-900 text-white rounded-2xl shadow-[inset_4px_4px_6px_rgba(255,255,255,0.1),inset_12px_12px_14px_rgba(0,0,0,0.6)] transition-all duration-300">Logos</motion.button>
+      
+      <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: false }}
+                    className="bg-gradient-to-b from-slate-600 to-slate-800 grid grid-cols-1 sm:grid-cols-2 gap-4 px-6 py-8 rounded-3xl mt-10"
+                  >
+                    {[Logo1, Logo2].map((image, index) => (
+                      <motion.img
+                        key={index}
+                        src={image}
+                        alt={`Logo-${index + 1}`}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
+                        viewport={{ once: false }}
+                        className="w-full rounded-lg"
+                      />
+                    ))}
+              </motion.div>
+        
         <motion.button 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -247,84 +328,8 @@ export const DesignExpo = () => {
                     ))}
               </motion.div>
 
+ 
 
-        <motion.button 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
-        transition={{ duration: 1 }}
-        className="bg-zinc-900 px-4 py-3 mt-20 border border-zinc-900 text-white rounded-2xl shadow-[inset_4px_4px_6px_rgba(255,255,255,0.1),inset_12px_12px_14px_rgba(0,0,0,0.6)] transition-all duration-300">Logos</motion.button>
-      
-      <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    viewport={{ once: false }}
-                    className="bg-gradient-to-b from-slate-600 to-slate-800 grid grid-cols-1 sm:grid-cols-2 gap-4 px-6 py-8 rounded-3xl mt-10"
-                  >
-                    {[Logo1, Logo2].map((image, index) => (
-                      <motion.img
-                        key={index}
-                        src={image}
-                        alt={`Logo-${index + 1}`}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
-                        viewport={{ once: false }}
-                        className="w-full rounded-lg"
-                      />
-                    ))}
-              </motion.div>
-
-        <motion.button
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: false }}
-        transition={{ duration: 1 }}
-        className="bg-zinc-900 px-4 py-3 mt-20 border border-zinc-900 text-white rounded-2xl shadow-[inset_4px_4px_6px_rgba(255,255,255,0.1),inset_12px_12px_14px_rgba(0,0,0,0.6)] transition-all duration-300">Mobile app</motion.button>
-
-      <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    viewport={{ once: false }}
-                    className="bg-gradient-to-b from-slate-600 to-slate-800 grid grid-cols-2 md:grid-cols-4 gap-4 px-6 py-8 rounded-3xl mt-10"
-                  >
-                    {[pro3, pro4, pro6, pro5].map((image, index) => (
-                      <motion.img
-                        key={index}
-                        src={image}
-                        alt={`ecommerce-${index + 1}`}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
-                        viewport={{ once: false }}
-                        className="w-full rounded-lg"
-                      />
-                    ))}
-              </motion.div>
-
-      
-      <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
-                    viewport={{ once: false }}
-                    className="bg-gradient-to-b from-slate-600 to-slate-800 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-6 py-8 rounded-3xl mt-10"
-                  >
-                    {[pro7, pro2, pro1].map((image, index) => (
-                      <motion.img
-                        key={index}
-                        src={image}
-                        alt={`project-${index + 1}`}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
-                        viewport={{ once: false }}
-                        className="w-full rounded-lg"
-                      />
-                    ))}
-              </motion.div>
 
       </div>
     </div>

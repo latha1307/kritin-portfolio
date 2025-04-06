@@ -38,7 +38,7 @@ export const NavBar = () => {
         </li>
         
         <li className={linkStyle("/resume")}>
-  <a href="Kritin.docx" download="Kritin_resume.docx">
+  <a href="Kritin.pdf" download="Kritin_resume.pdf">
     Resume
   </a>
 </li>
