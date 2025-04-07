@@ -29,6 +29,14 @@ import pro5 from '../assets/certProject/Library.png'
 import pro6 from '../assets/certProject/Self care.jpg'
 import pro7 from '../assets/certProject/Therapists.png'
 import { motion } from 'framer-motion';
+import parent1 from '../assets/capstone_project/parent1.png'
+import parent2 from '../assets/capstone_project/parent2.png'
+import parent3 from '../assets/capstone_project/parent3.jpg'
+import parent4 from '../assets/capstone_project/parent4.jpg'
+import parent5 from '../assets/capstone_project/parent5.jpg'
+import parent6 from '../assets/capstone_project/parent6.jpg'
+import parent7 from '../assets/capstone_project/parent7.jpg'
+import parent8 from '../assets/capstone_project/parent8.jpg'
 
 export const DesignExpo = () => {
   return (
@@ -39,6 +47,53 @@ export const DesignExpo = () => {
               transition={{ duration: 1 }}
               className=" md:text-[58px] text-[38px] font-bold leading-tight">Browse through some of my design explorations</motion.h1>
       <div className="mt-28">
+
+      <motion.button 
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false }}
+        transition={{ duration: 1 }}
+        className="bg-zinc-900 px-4 py-3 mt-20 border border-zinc-900 text-white rounded-2xl shadow-[inset_4px_4px_6px_rgba(255,255,255,0.1),inset_12px_12px_14px_rgba(0,0,0,0.6)] transition-all duration-300">Mobile app</motion.button>
+      <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: false }}
+                    className="bg-gradient-to-b from-slate-600 to-slate-800 grid grid-cols-2 md:grid-cols-4 gap-4 px-6 py-8 rounded-3xl mt-10"
+                  >
+                    {[parent1, parent2, parent3, parent4].map((image, index) => (
+                      <motion.img
+                        key={index}
+                        src={image}
+                        alt={`ecommerce-${index + 1}`}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
+                        viewport={{ once: false }}
+                        className="w-full rounded-lg"
+                      />
+                    ))}
+              </motion.div>
+      <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    viewport={{ once: false }}
+                    className="bg-gradient-to-b from-slate-600 to-slate-800 grid grid-cols-2 md:grid-cols-4 gap-4 px-6 py-8 rounded-3xl mt-10"
+                  >
+                    {[parent5, parent6, parent7, parent8].map((image, index) => (
+                      <motion.img
+                        key={index}
+                        src={image}
+                        alt={`ecommerce-${index + 1}`}
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
+                        viewport={{ once: false }}
+                        className="w-full rounded-lg"
+                      />
+                    ))}
+              </motion.div>
       <motion.button 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -85,6 +140,8 @@ export const DesignExpo = () => {
                       />
                     ))}
               </motion.div>
+
+ 
         <motion.button 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

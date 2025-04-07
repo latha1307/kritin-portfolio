@@ -20,9 +20,11 @@ export const NavBar = () => {
   return (
     <nav className="bg-black text-white px-6 md:px-32 py-4 flex fixed w-full md:bg-opacity-70 md:bg-blend-multiply top-0 z-10 justify-between items-center md:backdrop-blur-lg">
       <div className="flex items-center gap-3">
+        <Link to='/projects'>
         <h2 className="text-[28px] font-bold text-[#DB4A2B] tracking-widest">
           Kritin
         </h2>
+        </Link>
       </div>
 
       <ul className="hidden md:flex gap-8 text-gray-300 font-semibold">
