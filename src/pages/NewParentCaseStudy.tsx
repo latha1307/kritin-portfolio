@@ -326,52 +326,7 @@ A large image area dominates the center. This space is envisioned to be customiz
 The Daily Logs screen serving as the central hub for recording various baby-related activities.
 </motion.div>
 
-<motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 0.5 }}
-      viewport={{ once: false }}
-      className="flex justify-center items-center mt-16 gap-4 p-5 bg-gradient-to-r from-[#15161A] to-[#2F3031] rounded-3xl h-auto w-full"
-    >
-      {isPlaying ? (
-        // ✅ Show YouTube Video
-        <div className="w-full sm:w-[640px] h-auto aspect-video rounded-xl overflow-hidden shadow-lg">
-          <iframe
-            className="w-full h-full"
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
-            title="YouTube video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      ) : (
-        <div className="flex relative flex-wrap sm:flex-nowrap justify-center gap-4">
 
-                <div className="absolute right-0 bottom-0 cursor-pointer m-1 z-10 bg-[#DB4A2B]  p-4 rounded-full">
-                  <FaPlay onClick={() => setIsPlaying(true)}  className="text-white ml-1  text-3xl sm:text-4xl" />
-                </div>
-  
-          {ParentImages.map((image, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
-              viewport={{ once: false }}
-              className="relative  w-40 sm:w-52 md:w-58"
-              
-            >
-              <img
-                src={image}
-                alt={`parent-${index + 1}`}
-                className="rounded-lg w-full object-cover"
-              />
-              
-            </motion.div>
-          ))}
-        </div>
-      )}
-    </motion.div>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: false }} transition={{ duration: 1 }} className="md:text-[22px] text-[20px] mt-5 text-zinc-400">
             The Memories screen offers parents a streamlined and visually intuitive way to capture their child's milestones.  With a simple tap on the '+' icon, users can quickly add photos and build a beautiful collection of cherished moments.
 
@@ -439,6 +394,53 @@ The Daily Logs screen serving as the central hub for recording various baby-rela
 <br />
 The app has been built. I developed it using React Native and Expo with TypeScript, and Supabase for the backend. Here's a Promo Video showing the app in action.</motion.div>
       </div>
+
+      <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 0.5 }}
+      viewport={{ once: false }}
+      className="flex justify-center items-center mt-16 gap-4 p-5 bg-gradient-to-r from-[#15161A] to-[#2F3031] rounded-3xl h-auto w-full"
+    >
+      {isPlaying ? (
+        // ✅ Show YouTube Video
+        <div className="w-full sm:w-[640px] h-auto aspect-video rounded-xl overflow-hidden shadow-lg">
+          <iframe
+            className="w-full h-full"
+            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
+            title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      ) : (
+        <div className="flex relative flex-wrap sm:flex-nowrap justify-center gap-4">
+
+                <div className="absolute right-0 bottom-0 cursor-pointer m-1 z-10 bg-[#DB4A2B]  p-4 rounded-full">
+                  <FaPlay onClick={() => setIsPlaying(true)}  className="text-white ml-1  text-3xl sm:text-4xl" />
+                </div>
+  
+          {ParentImages.map((image, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.6 + index * 0.2 }}
+              viewport={{ once: false }}
+              className="relative  w-40 sm:w-52 md:w-58"
+              
+            >
+              <img
+                src={image}
+                alt={`parent-${index + 1}`}
+                className="rounded-lg w-full object-cover"
+              />
+              
+            </motion.div>
+          ))}
+        </div>
+      )}
+    </motion.div>
      
     </div>
     </div>
